@@ -34,7 +34,6 @@ function mult(x) {
 }
 
 // Function rest parameter
-
 function createStudent(firstName, lastName, ...grades) {
   const avgGrade = grades.reduce((acc, curr) => acc + curr, 0) / grades.length;
 
@@ -47,11 +46,9 @@ function createStudent(firstName, lastName, ...grades) {
 }
 
 const student = createStudent("Nick", "Anderson", 10, 12, 6);
-console.log(student);
 
 // Tagged template literals
-
-function comma(strings, ...values) {
+function comma(strings) {
   return strings.reduce((prev, next) => {
     let value = value.shift() || [];
     value.join(", ");
